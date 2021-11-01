@@ -1,0 +1,249 @@
+---
+title: "Avance 2-Trabajo Grupal"
+author: "Emiliano Zepeda"
+date: "29/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Introducción, marco teórico, pregunta de investigación, objetivos e hipótesis:
+Emiliano Zepeda (20192020)
+Alonso Iberico (20183122)
+Grupo: Los lobos esteparios
+Avance 2-Trabajo Grupal Estadística para el análisis político 2
+Tema: Apoyo a la democracia en Venezuela y Uruguay en el año 2020: Variables y explicaciones.
+Pregunta de investigación: ¿Cuál es la situación de la democracia en Uruguay y Venezuela en el 2020?
+Introducción:
+Al estudiar el fenómeno sobre el apoyo a la democracia, hay una amplia literatura que busca explicar las principales variables que lo explican, en diversos puntos geográficos y lapsos temporales. Al realizar una revisión extensa de la literatura se identificó que hay cierto consenso con relación a las variables principales que explicarían el apoyo o satisfacción con la democracia. Por un lado, Vargas y González encontraron en “Los determinantes de la satisfacción con la democracia, desde el enfoque de un modelo multinivel” que “la satisfacción con la democracia está influenciada a nivel macro con el ingreso de las personas y a nivel micro con las percepciones que tiene cada individuo en su bienestar personal, de la situación de la economía en general, género y educación” (2013). En este sentido, el aspecto económico es de suma importancia en la percepción de (2011, pp. 426) la democracia de un individuo, tanto en el nivel micro como en el nivel macro. Ciertamente, Santos y Martínez sostienen en “La insatisfacción con la democracia en América Latina: Análisis de factores económicos y políticos en 2017” que “en Latinoamérica, la baja satisfacción con el funcionamiento de la democracia responde a factores tanto económicos como políticos, que se encuentran estrechamente vinculados en el ejercicio de gobierno” (2018). Por lo tanto, el mal funcionamiento de estos, ha generado desencanto respecto al funcionamiento de la democracia como sistema de gobierno. Finalmente, Wike y otros también tienen esta perspectiva al alegar que “las perspectivas negativas sobre la situación económica del país tienen una fuerte asociación con la insatisfacción individual con la democracia” (2019).
+En primer lugar, con relación al caso venezolano, este ha estado sujeto a un régimen autoritario desde la llegada de Hugo Chávez al poder en 1999 y, posteriormente, bajo el gobierno de Nicolás Maduro desde el 2013 hasta la actualidad (2021). Para poder entender cómo es que se llegó a  la elección de un gobierno autoritario en Venezuela es preciso realizar una revisión de la literatura sobre el caso venezolano. Tal como señala Chacín, “la democracia es opuesta al autoritarismo o cualquier forma de gobierno personalista o arbitrario” (2019, pp. 28). En este sentido, el hecho de que se haya llegado a un extremo opuesto al régimen democrático requiere un análisis sobre las razones detrás de este hecho. De esta manera, el autor plantea que el régimen autoritario en Venezuela emergió “como reacción a los ajustes neoliberales que privilegiaron la eficacia económica sobre la justicia social, profundizando las desigualdades” (2019, pp. 35). Nuevamente, se vuelven a evidenciar la importancia de los factores económicos y la percepción sobre las políticas públicas como variables explicativas del apoyo a la democracia. Sin embargo, el caso venezolano también está ligado a un problema estructural, con instituciones “caracterizadas por la completa ausencia de separación de poderes, de independencia y autonomía del Poder Judicial y, en consecuencia, de gobierno democrático” (Brewer, 2009, pp.517). A su vez, otro factor importante es la pérdida de la confianza en las instituciones estatales venezolanas. Sobre esto, Romero y Benayas señalan que “En estas condiciones, los derechos humanos son cotidianamente amenazados (…). De este modo, se pierde la confianza en las instituciones y en la democracia” (2018, pp. 299). 
+Con relación al caso de Uruguay, en la revisión de la literatura hemos encontrado lo siguiente: “la situación de la democracia en Uruguay cumple con los requisitos básico según la definición schumpetariana: los mecanismos de competencia electoral y sus resultados están garantizados” (Lissidini,2020, pg.189). En este sentido, en este país existe un sistema electoral donde existe una pluralidad de fuerzas políticas, en donde se encuentran el Frente Amplio como representante del espectro de la izquierda o el Partido Nacional exponente de la derecha que se disputa la lucha por el poder político con otros partidos como él colorado. Además, en este país existe a partir de la “constitución de 1997 y la Ley 17.063 de Elecciones Internas consagraron dentro del cronograma electoral de Uruguay, la realización de elecciones primarias-o internas-para dirimir el candidato presidencial de cada partido del sistema político uruguayo (Méndez,2020, pg. 31). Por lo tanto, los partidos políticos deben dirimir dentro de su organización cual sería el mejor candidato posible para competir en las elecciones con los otros partidos. De esta manera, se garantiza un mecanismo, por el cual los partidos no seleccionan a una persona al azar para ser la opción del partido sino se deben celebrar unas elecciones internas donde cada militante de la organización política decide cual es el mejor candidato según su perspectiva. Por lo tanto, nuestro objetivo general es entender cómo han ido variado la percepción de los ciudadanos latinoamericanos respecto a los sistemas democráticos en la región y el objetivo específico es analizarlo desde las últimas elecciones acontecidas en Uruguay (2019) y a las vísperas de celebrarse en Venezuela (2021).  La pregunta de investigación será: ¿Cuál es la situación de la democracia en Uruguay y Venezuela en el 2020?  Una posible hipótesis de respuesta es que en Uruguay se ha consolidado el régimen democrático desde hace 30 años debido a que se cuenta con los requisitos básicos para sustentar este tipo de gobierno, mientras que en Venezuela desde la llegada de Hugo Chávez se han ido derribando las instituciones como el sistema electoral, la procuraduría general, el congreso y con ello se ha ido consolidado un régimen basado en la personalidad de la figura presidencial. Para evaluar esta hipótesis y responder a la pregunta de investigación, se utilizará la base de datos del Latinobarómetro 2020, una de las más grandes encuestadoras sobre la situación económica y de la democracia en los países latinoamericanos. A su vez, se utilizarán las variables a ser mencionadas a continuación.
+
+Bibliografía:
+Brewer, A. (2009). La demolición del Estado de Derecho y la Destrucción de la Democracia en Venezuela (1999-2009). Ciudad de México: Universidad Nacional Autónoma de México.
+
+Chacín, R. (2019). El nuevo autoritarismo latinoamericano: Un reto para la democracia y los derechos humanos (análisis del caso venezolano). Estudios Constitucionales, 17 (1), pp. 15-52. Consulta: 29 de octubre de 2021 en:
+https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0718-52002019000100015&lang=pt
+
+Lissidini, A. (2020). Uruguay: sin déficit democrático y con giro electoral. REVISTA EUROLATINOAMERICANA DE ANÁLISIS SOCIAL Y POLÍTICO, 1(1), 187-198.
+http://www.ojs.unsj.edu.ar/index.php/relasp/article/view/513
+
+Méndez Leiva, G. (2020). Las elecciones primarias presidenciales en Chile, Argentina y Uruguay, ¿un incentivo a la participación electoral? (Doctoral dissertation, Universidad del Desarrollo. Facultad de Gobierno).
+http://repositorio.udd.cl/handle/11447/3452
+
+Romero, C., & Benayas, G. (2019). Venezuela: el ocaso de una democracia. Revista Mexicana de Ciencias Políticas y Sociales, 233, pp. 285-306. Consulta: 28 de octubre de 2021 en:
+http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-19182018000200285
+
+Santos, Y., & Martínez, O. (2017). La insatisfacción con la democracia en América Latina. Análisis de factores económicos y políticos en 2017. Revista de Ciencias Sociales y Humanas, 32, pp.157-174. Consulta: 27 de octubre del 2021 en:
+https://www.redalyc.org/journal/4761/476162468008/html/
+
+Vargas, D., & González, J. (2013). Los determinantes de la satisfacción con la democracia, desde el enfoque de un modelo multinivel. Econoquantum, 10(2). doi: 2007-9869.
+http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-66222013000200003
+
+Wike, R., Silver, L., & Castillo, A. (2019). Many People Around the World Are Unhappy With How Democracy Is Working. Consulta: 28 de Octubre del 2021 en https://www.pewresearch.org/global/2019/04/29/many-across-the-globe-are-dissatisfied-with-how-democracy-is-working/
+
+
+
+#Identificación del país en la base de datos:
+
+Uruguay=858
+Venezuela=862
+
+Apoyo a la democracia=P10stgbs
+```{r}
+library(rio)
+library(DescTools)
+library(psych)
+data=import("Latinobarometro_2020_Esp_Rdata_v1_0.rdata")
+subset_general=subset(data,data$idenpa==858|data$idenpa==862)
+subset_venezuela=subset(data,data$idenpa==862)
+subset_uruguay=subset(data,data$idenpa==858)
+```
+
+#Variables Independientes:
+
+Para realizar este estudio, se eligieron las siguientes variables independientes: 
+P2ST Imagen del progreso del país
+
+P11STGBS.B Satisfacción con el funcionamiento de la economía en (país)
+
+Desde P13S.D hasta P13S.I: Índice de Confianza en el Estado.
+
+Desde P15ST.A hasta P15ST.K: Índice de Confianza en insituciones no gubernamentales.
+
+P17STGBS Aprobación de la gestion del gobierno que encabeza el presidente (nombre)
+
+
+
+#Dependientes:
+A su vez, se eligieron las siguientes variables dependientes:
+
+P10STGBS Apoyo a la democracia
+
+P11STGBS.A Satisfacción con la democracia
+
+
+#Análisis Decriptivo de las variables independientes:
+P2ST Imagen del progreso del país:
+
+```{r}
+#En Venezuela
+summary(subset_venezuela$p2st)
+describeBy(subset_venezuela$p2st)
+Mode(subset_venezuela$p2st)
+```
+La variable imagen del progreso en Venezuela tiene como mediana el valor 3, de media 2.386 y moda es 3 y su frecuencia es de 624. Por lo tanto, los venezolanos en promedio consideran que su país se encuentra en retroceso ya que la valoración 3 implica ello, teniendo en cuenta que en el libro de códigos se señala que 1=Está progresando, 2=Está estancado y 3=Está en retroceso. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 2.38 y la desviación estándar al conseguir 0.86 nos señala que los valores de la media se encuentran poco dispersos entre si al dividirse en 3 partes respecto al promedio.
+```{r}
+#En Uruguay:
+summary(subset_uruguay$p2st)
+describeBy(subset_uruguay$p2st)
+Mode(subset_uruguay$p2st)
+```
+La variable imagen del progreso en el paíss en Uruguay tiene como mediana el valor 2 , de media 1.82 y moda 2.385.Por lo tanto, los uruguayos en promedio consideran que su país se ha estancado ya que la valoracion 2 implica ello. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 2 y la desviación estandar al conseguir 0.85 nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 2 partes respecto al promedio. 
+
+P11STGBS.B Satisfacción con el funcionamiento de la economía en (país)
+
+```{r}
+#En Venezuela:
+summary(subset_venezuela$P11STGBS.B)
+describeBy(subset_venezuela$P11STGBS.B)
+Mode(subset_venezuela$P11STGBS.B)
+```
+La variable satisfacción con el funcionamiento de la economía en Venezuela tiene como mediana el valor 4, de media 3.62 y moda 4 con una frecuencia de 880.Por lo tanto, los venezolanos en promedio se encuentran nada satisfecho con la economía ya que media al encontrarse más cerca al valor 4 se ha considerado esta interpretación, teniendo en cuenta que en el libro de códigos, 1=Muy satisfecho y 4=nada satisfechos. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 3.632 y la desviación estándar al conseguir 0.78 nos señala que los valores de la media se encuentran bastante dispersas entre sí al dividirse en 5 partes respecto al promedio.
+```{r}
+#En Uruguay:
+summary(subset_uruguay$P11STGBS.B)
+describeBy(subset_uruguay$P11STGBS.B)
+Mode(subset_uruguay$P11STGBS.B)
+```
+La variable satisfacción con el funcionamiento de la economía en Uruguay tiene como mediana el valor 3, de media 2.59 y moda 3 con una frecuencia de 565.Por lo tanto, los uruguayos en promedio se encuentran no muy satisfechos con la economía ya que la media al encontrarse más cerca al valor 3 se ha considerado esta interpretación. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 2.59 y la desviación estándar al conseguir 1.18 nos seÃ±ala que los valores de la media se encuentran muy poco dispersas entre sí, al dividirse en 2 partes respecto al promedio.
+
+
+Creamos el Índice de Confianza en el Estado con las variables desde P13ST.D hasta P13ST.I
+
+```{r}
+#En general:
+subset_general$indice_conf_pais=(subset_general$p13st.d+subset_general$p13st.e+subset_general$p13st.f+subset_general$p13st.g+subset_general$p13st.h+subset_general$p13st.i)/6
+summary(subset_general$indice_conf_pais)
+describeBy(subset_general$indice_conf_pais)
+Mode(subset_general$indice_conf_pais)
+```
+
+
+```{r}
+#En Venezuela
+subset_venezuela$indice_conf_pais=(subset_venezuela$p13st.d+subset_venezuela$p13st.e+subset_venezuela$p13st.f+subset_venezuela$p13st.g+subset_venezuela$p13st.h+subset_venezuela$p13st.i)/6
+summary(subset_venezuela$indice_conf_pais)
+describeBy(subset_venezuela$indice_conf_pais)
+Mode(subset_venezuela$indice_conf_pais)
+```
+El Índice de Confianza en el Estado en Venezuela tiene como mediana el valor 3.5, de media 3.186 y moda 4 con una frecuencia de 354.Por lo tanto, los venezolanos en promedio encuentran poca confianza en las instituciones del Estado ya que la media al encontrarse más cerca al valor 3 se ha considerado esta interpretación, considerando que en el libro de códigos se indica, con relación a la confianza en las instituciones del Estado que esta oscila entre 1 y 4, donde: 1=Mucha y 4=Ninguna. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 3.186 y la desviación estándar al conseguir 0.92 nos señala que los valores de la media se encuentran bastante dispersas entre sí al dividirse en 4 partes respecto al promedio.
+```{r}
+#En Uruguay:
+subset_uruguay$indice_conf_pais=(subset_uruguay$p13st.d+subset_uruguay$p13st.e+subset_uruguay$p13st.f+subset_uruguay$p13st.g+subset_uruguay$p13st.h+subset_uruguay$p13st.i)/6
+summary(subset_uruguay$indice_conf_pais)
+describeBy(subset_uruguay$indice_conf_pais)
+Mode(subset_uruguay$indice_conf_pais)
+```
+El Índice de Confianza en el Estado en Uruguay tiene como mediana el valor 2.33, de media 2.29 y moda 2 con una frecuencia de 121.Por lo tanto, los uruguayos en promedio se encuentran algo confiados en las instituciones del Estado ya que la media al encontrarse más cerca al valor 2 se ha considerado esta interpretación, considerando lo mencionado con anterioridad con relación a la estructura de esta variable. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 2.29 y la desviación estándar al conseguir 0.92 nos señala que los valores de la media se encuentran muy poco dispersas entre sí al dividirse en 2 partes respecto al promedio.
+
+Creamos el Índice de Confianza en insituciones no gubernamentales con las variables desde P15ST.A hasta P15ST.G.
+
+```{r}
+#En general:
+subset_general$indice_conf_inst_ng=(subset_general$p15st.a+subset_general$p15st.b+subset_general$p15st.c+subset_general$p15st.d+subset_general$p15st.e+subset_general$p15st.f+subset_general$p15st.g)/7
+summary(subset_general$indice_conf_inst_ng)
+describeBy(subset_general$indice_conf_inst_ng)
+Mode(subset_general$indice_conf_inst_ng)
+```
+
+```{r}
+#En Venezuela:
+subset_venezuela$indice_conf_inst_ng=(subset_venezuela$p15st.a+subset_venezuela$p15st.b+subset_venezuela$p15st.c+subset_venezuela$p15st.d+subset_venezuela$p15st.e+subset_venezuela$p15st.f+subset_venezuela$p15st.g)/7
+summary(subset_venezuela$indice_conf_inst_ng)
+describeBy(subset_venezuela$indice_conf_inst_ng)
+Mode(subset_venezuela$indice_conf_inst_ng)
+```
+El Índice de Confianza en instituciones no gubernamentales en Venezuela tiene como mediana el valor 2.57, de media 2.74 y moda 3 con una frecuencia de 101. Por lo tanto, los venezolanos en promedio se encuentran poco satisfechos con la labor de las instituciones no gubernamentales puesto que la media al encontrarse más cerca al valor 3 se ha considerado esta interpretación, teniendo en cuenta que la estructura de esta variable es igual que la de la confianza en las instituciones estatales. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser la media de un valor de 2.744 y la desviación estándar al conseguir 0.93 nos señala que los valores de la media se encuentran algo dispersas entre sí al dividirse en 3 partes respecto al promedio.
+```{r}
+#En Uruguay:
+subset_uruguay$indice_conf_inst_ng=(subset_uruguay$p15st.a+subset_uruguay$p15st.b+subset_uruguay$p15st.c+subset_uruguay$p15st.d+subset_uruguay$p15st.e+subset_uruguay$p15st.f+subset_uruguay$p15st.g)/7
+summary(subset_uruguay$indice_conf_inst_ng)
+describeBy(subset_uruguay$indice_conf_inst_ng)
+Mode(subset_uruguay$indice_conf_inst_ng)
+```
+La variable Índice de confianza en instituciones no gubernamentales en Uruguay tiene como mediana el valor de 2.21 , de media 2.11 y moda es 2.43 y su frecuencia es de 108 .Por lo tanto, los uruguayos en promedio sí tienen una confianza relativamente alta en las instituciones no gubernamentales, puesto que el libro de códigos indica que esta variable oscila entre 1 y 4, donde 1=Mucha y 4=Ninguna, por lo que la valoracion 2 implica ello. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 0.91 nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 4 partes respecto al promedio.
+
+
+P17STGBS Aprobación de la gestion del gobierno que encabeza el presidente (nombre):
+```{r}
+#En Venezuela
+summary(subset_venezuela$p17stgbs)
+describeBy(subset_venezuela$p17stgbs)
+Mode(subset_venezuela$p17stgbs)
+```
+La variable Aprobación de la gestión del gobierno que encabeza el presidente Maduro en Venezuela tiene como mediana el valor de 2 , de media 1.45 y moda es 2,con una frecuencia de 791 .Por lo tanto, los venezolanos en promedio no aprueba la gestión del presidente Maduro, puesto que el libro de códigos indica que esta variable oscila tiene 2 respuestas: 1 y 2, donde 1=Sí aprueba y 2=No aprueba, por lo que la valoracion 2 implica ello. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 1.03 nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 2 partes respecto al promedio, hecho que indica poca variabilidad entre las respuestas.
+```{r}
+#En Uruguay
+summary(subset_uruguay$p17stgbs)
+describeBy(subset_uruguay$p17stgbs)
+Mode(subset_uruguay$p17stgbs)
+```
+La variable Aprobación de la gestión del gobierno que encabeza el presidente Mujica en Uruguay tiene como mediana el valor de 1 , de media 1.093 y su moda es 1,con una frecuencia de 692 .Por lo tanto, los uruguayos en promedio sí aprueban la gestión del presidente Mujica, puesto que el libro de códigos indica que esta variable tiene 2 respuestas: 1 y 2, donde 1=Sí aprueba y 2=No aprueba, por lo que la valoracion 1 implica una gran aprobación. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 1.04 también nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 2 partes respecto al promedio, hecho que indica poca variabilidad entre las respuestas.
+
+#Análisis descriptivo de las variables dependientes:
+P10STGBS Apoyo a la democracia
+```{r}
+#En Venezuela:
+summary(subset_venezuela$p10stgbs)
+describeBy(subset_venezuela$p10stgbs)
+Mode(subset_venezuela$p10stgbs)
+```
+La variable Apoyo a la democracia en Venezuela tiene como mediana el valor de 1 , de media 1.258 y su moda es 1,con una frecuencia de 854.Por lo tanto, los venezolanos en promedio sí apoyan la democracia, puesto que el libro de códigos indica que esta variable oscila entre 1 y 3 donde 1=La democracia es preferible a cualquier otra forma de gobierno; 2=En algunas circunstancias, un gobierno autoritario puede ser preferible; y 3=A la gente como uno, nos da lo mismo un régimen democrático que uno no democrático, por lo que la valoracion 1 implica un apoyo hacia los regímenes democráticos. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 0.96 también nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 3 partes respecto al promedio, hecho que indica poca variabilidad entre las respuestas.
+```{r}
+#En Uruguay:
+summary(subset_uruguay$p10stgbs)
+describeBy(subset_uruguay$p10stgbs)
+Mode(subset_uruguay$p10stgbs)
+```
+La variable Apoyo a la democracia en Uruguay tiene como mediana el valor de 1 , de media 1.198 y su moda es 1,con una frecuencia de 888.Por lo tanto, los uruguayos en promedio también apoyan la democracia, puesto que el libro de códigos indica que esta variable oscila entre 1 y 3 donde 1=La democracia es preferible a cualquier otra forma de gobierno; 2=En algunas circunstancias, un gobierno autoritario puede ser preferible; y 3=A la gente como uno, nos da lo mismo un régimen democrático que uno no democrático, por lo que la valoracion 1 implica un apoyo hacia los regímenes democráticos en Uruguay. En este sentido, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 0.92 también nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 3 partes respecto al promedio, hecho que indica poca variabilidad entre las respuestas.
+
+P11STGBS.A Satisfacción con la democracia:
+```{r}
+#En Venezuela:
+summary(subset_venezuela$P11STGBS.A)
+describeBy(subset_venezuela$P11STGBS.A)
+Mode(subset_uruguay$P11STGBS.A)
+```
+La variable Satisfacción con la democracia en Venezuela tiene como mediana el valor de 4 , de media 3.258 y su moda es 2,con una frecuencia de 542. Por lo tanto, los venezolanos en promedio no están satisfechos con la democracia a pesar de apoyarla, puesto que el libro de códigos indica que esta variable oscila entre 1 y 4 donde 1=Muy satisfecho y 4=Nada Satisfecho, por lo que el promedio de 3.258 implica una poca satisfacción con los regímenes democráticos en Venezuela, a pesar del apoyo hacia los mismos. A su vez, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 1.07 también nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 4 partes respecto a la media, hecho que indica poca variabilidad entre las respuestas.
+
+```{r}
+#En Uruguay:
+summary(subset_uruguay$P11STGBS.A)
+describeBy(subset_uruguay$P11STGBS.A)
+Mode(subset_uruguay$P11STGBS.A)
+```
+La variable Satisfacción con la democracia en Uruguay tiene como mediana el valor de 2 , de media 2.002 y su moda también es 2,con una frecuencia de 542. Por lo tanto, los uruguayos en promedio están medianamente satisfechos con la democracia, tal como se evidencia en su apoyo hacia la misma, puesto que el libro de códigos indica que esta variable oscila entre 1 y 4 donde 1=Muy satisfecho y 4=Nada Satisfecho, por lo que el promedio de 2.002 implica una satisfacción moderada con los regímenes democráticos en Uruguay. A su vez, la varianza al obtener de valor 1 nos dice que la variabilidad de los datos respecto a la media es sensible al ser de 1, y la desviación estandar al conseguir 1.08 también nos señala que los valores de la media se encuentra muy poco dispersos entre si al dividirse en 4 partes respecto a la media, hecho que indica poca variabilidad entre las respuestas.
+
+#Modelos de regresión a ser utilizados:
+```{r}
+str(subset_venezuela$p2st)
+str(subset_uruguay$p2st)
+str(subset_venezuela$P11STGBS.B)
+str(subset_uruguay$P11STGBS.B)
+str(subset_venezuela$indice_conf_pais)
+str(subset_uruguay$indice_conf_pais)
+str(subset_venezuela$indice_conf_inst_ng)
+str(subset_uruguay$indice_conf_inst_ng)
+str(subset_venezuela$p10stgbs)
+str(subset_uruguay$p10stgbs)
+str(subset_venezuela$P11STGBS.A)
+str(subset_uruguay$P11STGBS.A)
+str(subset_venezuela$p17stgbs)
+str(subset_uruguay$p17stgbs)
+```
+La prueba a ser utilizada en nuestro trabajo de investigación será la regresión logistica ordinal al ser nuestras variables depedientes p10stgbs(Apoyo a la democracia) y P11STGBS.A (Satisfacción con la democracia) categóricas ordinales se buscara predecir la situación de la democracia en el año 2020 con las  siguientes variables indepedientes:P2ST Imagen del progreso del país,P11STGBS.B Satisfacción con el funcionamiento de la economía en (país), Índice de Confianza en el Estado :desde P13S.D hasta P13S.I, Índice de Confianza en insituciones no gubernamentales desde P15ST.A hasta P15ST.K y la P17STGBS, y Aprobación de la gestion del gobierno que encabeza el presidente (nombre)
+
+
